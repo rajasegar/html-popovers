@@ -19,8 +19,20 @@
       <button popovertarget="ns-popover-slide-in"  popovertargetaction="show" >Slide in</button>
       <button popovertarget="ns-popover-genie"  popovertargetaction="show" >Genie</button>
 
-      <x-toast id="ns-popover" type="scale">
+      <x-toast target="ns-popover" effect="scale">
             <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
+      </x-toast>
+
+      <x-toast target="ns-popover-jelly" effect="jelly">
+            <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
+      </x-toast>
+
+      <x-toast target="ns-popover-slide-in" effect="slide">
+            <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
+      </x-toast>
+
+      <x-toast target="ns-popover-genie" effect="genie">
+                    <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
       </x-toast>
       
 <!-- <div id="ns-popover"  class="ns-box ns-growl ns-effect-scale ns-type-notice ns-show" popover> -->
@@ -30,23 +42,23 @@
 <!-- </div> -->
 
 
-<div id="ns-popover-jelly"  class="ns-box ns-growl ns-effect-jelly ns-type-notice ns-show" popover>
-  <div class="ns-box-inner">
-    <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
-  </div><button popovertarget="ns-popover-jelly" popovertargetaction="hide" class="ns-close"></button>
-</div>
+<!-- <div id="ns-popover-jelly"  class="ns-box ns-growl ns-effect-jelly ns-type-notice ns-show" popover> -->
+  <!-- <div class="ns-box-inner"> -->
+    <!-- <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p> -->
+  <!-- </div><button popovertarget="ns-popover-jelly" popovertargetaction="hide" class="ns-close"></button> -->
+<!-- </div> -->
 
-<div id="ns-popover-slide-in"  class="ns-box ns-growl ns-effect-slide ns-type-notice ns-show" popover>
-  <div class="ns-box-inner">
-    <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
-  </div><button popovertarget="ns-popover-slide-in" popovertargetaction="hide" class="ns-close"></button>
-</div>
+<!-- <div id="ns-popover-slide-in"  class="ns-box ns-growl ns-effect-slide ns-type-notice ns-show" popover> -->
+  <!-- <div class="ns-box-inner"> -->
+    <!-- <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p> -->
+  <!-- </div><button popovertarget="ns-popover-slide-in" popovertargetaction="hide" class="ns-close"></button> -->
+<!-- </div> -->
 
-<div id="ns-popover-genie"  class="ns-box ns-growl ns-effect-genie ns-type-notice ns-show" popover>
-  <div class="ns-box-inner">
-    <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
-  </div><button popovertarget="ns-popover-genie" popovertargetaction="hide" class="ns-close"></button>
-</div>
+<!-- <div id="ns-popover-genie"  class="ns-box ns-growl ns-effect-genie ns-type-notice ns-show" popover> -->
+  <!-- <div class="ns-box-inner"> -->
+    <!-- <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p> -->
+  <!-- </div><button popovertarget="ns-popover-genie" popovertargetaction="hide" class="ns-close"></button> -->
+<!-- </div> -->
 
     </div>
     <script type="module" src="/main.js"></script>

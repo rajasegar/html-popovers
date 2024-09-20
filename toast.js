@@ -1,23 +1,29 @@
 class Toast extends HTMLElement {
   connectedCallback() {
-    const id = this.getAttribute('id');
-    const type = this.getAttribute('type')
+    const id = this.getAttribute('target');
+    const effect = this.getAttribute('effect')
 
-    this.popover = "auto";
+    const el = document.createElement('div');
+    el.id = id;
+    el.popover = "auto";
+    el.className = `ns-box ns-growl ns-effect-${effect} ns-type-notice ns-show`
+    
+    console.log(this.children)
 
+    const $inner = document.createElement('div')
+    $inner.className = "ns-box-inner";
+    $inner.appendChild(...this.children)
 
+    const $close = document.createElement('button');
+    $close.setAttribute('popovertarget', id);
+    $close.setAttribute('popovertargetaction', 'hide');
+    $close.className = "ns-close";
 
+    el.appendChild($inner);
+    el.appendChild($close);
 
-    this.innerHTML = `
+    this.replaceWith(el)
 
-<div class="ns-box ns-growl ns-effect-${type} ns-type-notice ns-show">
-  <div class="ns-box-inner">
-${this.children}
-<slot></slot>
-  </div><button popovertarget="${id}" popovertargetaction="hide" class="ns-close"></button>
-</div>
-`
-    this.replaceChildren(template)
   }
 }
 
