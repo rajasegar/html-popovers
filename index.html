@@ -37,6 +37,7 @@
     <div id="app">
       <h1>HTML Popovers</h1>
       <button popovertarget="ns-popover"  popovertargetaction="show" >Growl</button>
+      <button id="btn-manual">Growl- Manual</button>
       <button popovertarget="ns-popover-jelly"  popovertargetaction="show" >Jelly</button>
       <button popovertarget="ns-popover-slide-in"  popovertargetaction="show" >Slide in</button>
       <button popovertarget="ns-popover-genie"  popovertargetaction="show" >Genie</button>
@@ -46,13 +47,18 @@
         <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
       </x-toast>
 
+      <x-toast4 target="ns-popover-manual" effect="scale" mode="manual">
+        <h2>Popover heading</h2>
+        <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
+      </x-toast4>
+
       <x-toast2 target="ns-popover-jelly" effect="jelly">
         <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
       </x-toast2>
 
-      <x-toast target="ns-popover-slide-in" effect="slide">
+      <x-toast3 target="ns-popover-slide-in" effect="slide">
         <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
-      </x-toast>
+      </x-toast3>
 
       <x-toast target="ns-popover-genie" effect="genie">
         <p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>
